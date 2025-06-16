@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Picker With SinuDam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 Color Picker with SinuDam</h1>
+    <input type="color" id="colorPicker">
+    
+    <div class="color-box" id="colorBox"></div>
+
+    <div class="color-info">
+      <div>
+        <span>HEX: </span><code id="hexCode">#000000</code>
+        <button onclick="copyCode('hexCode')">Copy</button>
+      </div>
+      <div>
+        <span>RGB: </span><code id="rgbCode">rgb(0, 0, 0)</code>
+        <button onclick="copyCode('rgbCode')">Copy</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
